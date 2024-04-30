@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goodbye Julia</title>
+    <link rel="stylesheet" href="openpage.css">
+</head>
+<body>
+    <header>
+        <!-- بدايه الهيدر -->
+        <div class="head">
+    
+            <!-- اللوغو -->
+            <div class="logo">
+                THEATER
+            </div>
+            <!-- نهايه اللوغو -->
+    
+            <!-- اللينكات -->
+            <ul class="headlink">
+             <li class="headlinks0"> <a href="homepage.html" class="headlinks">HOME</a> </li> 
+              <li class="headlinks0"> <a href="tvpage.html"class="headlinks">TV SERIES</a> </li> 
+               <li class="headlinks0"> <a href="moviepage.html" class="headlinks">MOVIES</a></li> 
+            </ul>
+            <!-- نهايه اللينكات -->
+    
+            <!-- البحث -->
+            <div class="searchbar">
+                <input type="text" id="ser" placeholder="What are you looking for?" class="search" onmouseenter="searching()" onmouseleave="searching2()"> 
+            </div>
+            <!-- نهايه البحث -->
+    
+        </div>
+   </header>
+     <div class="con">
+       <video  controls>
+        <source src="media/Goodbye Julia (2023)_ Official Trailer.mp4" type="video/mp4">
+      </video>
+    
+
+        <table>
+            <tr>
+            <td>Just before the secession of South Sudan, a married former singer from the north seeks redemption for causing the death of a southern man by hiring his oblivious wife as her maid.</td>
+            </tr>
+            <tr><td><h3>Director: </h3> Mohamed Kordofani</td></tr>
+            <tr><td><h3>Writer: </h3> Mohamed Kordofani<td></tr>
+            <tr><td><h3>Stars: </h3> Eiman Yousif, Siran Riak, Nazar Goma</td></tr>
+        </table>
+     </div>
+
+            <h2>Goodbye Julia</h2>
+                <button>like</button>
+                <button>dislike</button>
+            
+</body>
+<script>
+    function searching() {
+       var styles;
+       styles=document.getElementById("ser")
+       styles.classList.add("searchstyle")
+    }
+    function searching2(){
+       var styles;
+       styles=document.getElementById("ser");
+       styles.classList.remove("searchstyle");
+    }
+const video = document.querySelector('video');
+video.width = 640; 
+video.height = 360; 
+
+</script>
+</html>

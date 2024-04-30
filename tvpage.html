@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TV SERIES</title>
+    <link rel="stylesheet" href="null.css">
+</head>
+<body>
+    <header>
+        <!-- بدايه الهيدر -->
+        <div class="head">
+    
+            <!-- اللوغو -->
+            <div class="logo">
+                THEATER
+            </div>
+            <!-- نهايه اللوغو -->
+    
+            <!-- اللينكات -->
+            <ul class="headlink">
+             <li class="headlinks0"> <a href="homepage.html" class="headlinks">HOME</a> </li> 
+              <li class="headlinks0"> <a href="tvpage.html"class="headlinks">TV SERIES</a> </li> 
+               <li class="headlinks0"> <a href="moviepage.html" class="headlinks">MOVIES</a></li> 
+            </ul>
+            <!-- نهايه اللينكات --><div class="searchbar">
+            <input type="text" id="ser" placeholder="What are you looking for?" class="search" onmouseenter="searching()" onmouseleave="searching2()"> 
+        </div>
+        <!-- نهايه البحث -->
+
+    </div>
+    </header>
+    <!-- نهايه الهيدر -->
+    <div class="main">
+
+
+
+
+    </div>
+
+    
+</body><script>
+    function searching() {
+       var styles;
+       styles=document.getElementById("ser")
+       styles.classList.add("searchstyle")
+    }
+    function searching2(){
+       var styles;
+       styles=document.getElementById("ser");
+       styles.classList.remove("searchstyle");
+    }
+</script>
+
+</html>

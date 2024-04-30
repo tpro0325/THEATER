@@ -1,0 +1,101 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>movie page</title>
+    <link rel="stylesheet" href="null.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <!-- بدايه الهيدر -->
+        <div class="head">
+    
+            <!-- اللوغو -->
+            <div class="logo">
+                THEATER
+            </div>
+            <!-- نهايه اللوغو -->
+    
+            <!-- اللينكات -->
+            <ul class="headlink">
+             <li class="headlinks0"> <a href="homepage.html" class="headlinks">HOME</a> </li> 
+              <li class="headlinks0"> <a href="tvpage.html"class="headlinks">TV SERIES</a> </li> 
+               <li class="headlinks0"> <a href="moviepage.html" class="headlinks">MOVIES</a></li> 
+            </ul>
+            <!-- نهايه اللينكات -->
+    
+            <!-- البحث -->
+            <div class="searchbar">
+                <input type="text" id="ser" placeholder="What are you looking for?" class="search" onmouseenter="searching()" onmouseleave="searching2()"> 
+            </div>
+            <!-- نهايه البحث -->
+    
+        </div>
+   </header>
+   <body style="background-color: black;"> 
+    <section class="default-box">
+   <div class="con" onmouseenter="enlargeBox()" onmouseleave="shrinkBox()">
+    <video controls>
+        <source src="media/movie.trailer.mp4" type="video/mp4">
+    </video>
+    <h1 style="color: aliceblue;"> Click here if you want to see the full movie 👇</h1>
+    <h1 style="text-align: center;"><a href="https://www.imdb.com/title/tt7985704/" style="color: rgb(130, 37, 37);">the full movie</a></h1>
+
+    <table style="color: aliceblue;">
+        <tr>
+            <td> <h2>Overview: Special agent Orson Fortune and his team of operatives recruit one of Hollywood's biggest movie stars to help them on an undercover mission when the sale of a deadly new weapons technology threatens to disrupt the world order.</td>
+            </h2>
+            </tr>
+        <tr>
+            <td><h3>Director: </h3> Guy Ritchie</td>
+        </tr>
+        <tr>
+            <td><h3>Writers: </h3> Guy Ritchie, Ivan Atkinson, Marn Davies</td>
+        </tr>
+        <tr>
+            <td><h3>Stars: </h3> Jason Statham, Aubrey Plaza, Cary Elwes</td>
+        </tr>
+        <tr>
+            <td><h3>S: </h3> Jason Statham, Aubrey Plaza, Cary Elwes</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="rating">
+                    <input type="radio" id="star5" name="rating" value="5">
+                    <label for="star5" class="star">☆</label>
+                    <input type="radio" id="star4" name="rating" value="4">
+                    <label for="star4" class="star">☆</label>
+                    <input type="radio" id="star3" name="rating" value="3">
+                    <label for="star3" class="star">☆</label>
+                    <input type="radio" id="star2" name="rating" value="2">
+                    <label for="star2" class="star">☆</label>
+                    <input type="radio" id="star1" name="rating" value="1">
+                    <label for="star1" class="star">☆</label>
+                </div>
+                <button onclick="submitRating()">Submit Rating</button>
+            </td>
+        </tr>
+    </table>
+</div>
+<h1 ><a href="moviepage.html" style="color: rgb(129, 9, 9);">Back</a></h1>
+    </section>
+</body>
+<script>
+    function searching() {
+       var styles;
+       styles=document.getElementById("ser")
+       styles.classList.add("searchstyle")
+    }
+    function searching2(){
+       var styles;
+       styles=document.getElementById("ser");
+       styles.classList.remove("searchstyle");
+    }
+const video = document.querySelector('video');
+video.width = 640; 
+video.height = 360; 
+
+</script>
+</body>
+</html>

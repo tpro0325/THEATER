@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> THEATER| Login </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--LOGIN BOX-->>
+
+   <div class="login-container"> 
+    <div class="login-box">
+       <div class="login-header">                 <!--header-->>
+        <h1>Login to <span class="theater-text">THEATER</span></h1>
+       </div>
+      <form action="homepage.html">                            <!---login form-->
+        <label for="email">email</label>
+        <div class="inp-box">
+            <input type="text" class="input-field" placeholder="E-mail" required/>
+        </div>
+        <div class="inp-box">
+            <label for="password">password</label>
+            <input type="password" class="input-field" placeholder="Password" required/>
+        </div>
+        <div class="forgot">                          <!--check BOX-->
+            <div class="cont">
+                <input type="checkbox" id="check">
+                <label for="check">Remember me</label>
+            </div>
+            <div class="pass-box">                             <!--forgot password link-->
+                <a href="$">Forgot password</a>          
+            </div>
+        </div>
+        <div class="sub-inp">                                      <!--LOGIN Button-->
+            <button class="sub-btn" id="submit">
+                <label>Login</label>
+            </button>
+        </div>
+        <div class="sign-up-link">
+            <p>Don't have an account? <a href="signUp.html?">Sign Up</a></p>
+        </div>
+      </form> 
+    </div>
+    
+   </div>  
+   <script>
+    function login() {
+        let email = document.querySelector('.input-field[type="text"]').value;
+        let password = document.querySelector('.input-field[type="password"]').value;
+        if (email === '' || password === '') {
+            alert('Please enter email and password');
+            return;
+        }
+    
+        if (!isValid(email)) {
+            alert('Invalid email format. Please enter a valid email address.');
+            return;
+        }
+    
+        var storedEmail = decodeURIComponent(getCookie('email'));
+        var storedPassword = decodeURIComponent(getCookie('password'));
+    
+        if (email === storedEmail && password === storedPassword) {
+            alert('YOU ARE IN!! Happy watching :)');
+            window.location.href = "homepage.html"; 
+        } 
+        else {
+            alert('Invalid email or password. Please try again!');
+        }
+    }
+    
+    // validate email
+    function isValid(email) {
+        var emailx = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailx.test(email);
+    }
+    
+    function getCookie(name) {
+        var cookieValue = "";
+        var cookies = document.cookie.split(';');
+        for (var i = 0; i < cookies.length; i++) {
+            var cookie = cookies[i].trim();
+            if (cookie.startsWith(name + '=')) {
+                cookieValue = cookie.substring(name.length + 1);
+                break;
+            }
+        }
+        return cookieValue;
+    }
+    
+    document.addEventListener('DOMContentLoaded', function () {
+        var loginButton = document.getElementById('submit');
+        loginButton.addEventListener('click', function (event) {
+            event.preventDefault();
+            login();
+        });
+    });
+    </script>
+</body>
+</html>    

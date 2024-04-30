@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="null.css">
+<script src="script.js"></script>
+<title>drama</title>
+</head>
+<body style="background-color: black;">
+    <header>
+        <!-- بدايه الهيدر -->
+        <div class="head">
+    
+            <!-- اللوغو -->
+            <div class="logo">
+                THEATER
+            </div>
+            <!-- نهايه اللوغو -->
+    
+            <!-- اللينكات -->
+            <ul class="headlink">
+             <li class="headlinks0"> <a href="homepage.html" class="headlinks">HOME</a> </li> 
+              <li class="headlinks0"> <a href="tvpage.html"class="headlinks">TV SERIES</a> </li> 
+               <li class="headlinks0"> <a href="moviepage.html" class="headlinks">MOVIES</a></li> 
+            </ul>
+            <!-- نهايه اللينكات --><div class="searchbar">
+            <input type="text" id="ser" placeholder="What are you looking for?" class="search" onmouseenter="searching()" onmouseleave="searching2()"> 
+        </div>
+        <!-- نهايه البحث -->
+
+    </div>
+    </header>
+    <!-- نهايه الهيدر -->
+    <div class="main">
+    <br><br>
+    
+    <h1 style="text-align: center; color: rgb(129, 9, 9);">drama movies</h1>
+  <section>
+    <div class="movie-container">
+        <div class="movie-box">
+            <a href="details.html">
+                <img src="media/d1.jpg">
+            </a>
+        </div>
+        <div class="movie-box">
+            <a href="movie.htm">
+                <img src="media/d2.jpg">
+            </a>
+        </div>
+        <div class="movie-box">
+            <a href="movie.htm">
+                <img src="media/d3.jpg">
+            </a>
+        </div>
+        <div class="movie-box">
+            <a href="movie.htm">
+                <img src="media/d4.jpg">
+            </a>
+        </div>
+        <div class="movie-container">
+            <div class="movie-box">
+                <a href="movie.htm">
+                    <img src="media/d5.jpg">
+                </a>
+            </div>
+            <div class="movie-box">
+                <a href="movie.htm">
+                    <img src="media/d6.jpg">
+                </a>
+            </div>
+            <div class="movie-box">
+                <a href="movie.htm">
+                    <img src="media/d7.jpg">
+                </a>
+            </div>
+            <div class="movie-box">
+                <a href="movie.htm">
+                    <img src="media/d8.jpg">
+                </a>
+            </div><div class="movie-container">
+              <div class="movie-box">
+                  <a href="movie.htm">
+                      <img src="media/d9.jpg">
+                  </a>
+              </div>
+              <div class="movie-box">
+                  <a href="details.html">
+                      <img src="media/d10.jpg">
+                  </a>
+              </div>
+              <div class="movie-box">
+                  <a href="movie.htm">
+                      <img src="media/d11.jpg">
+                  </a>
+              </div>
+              <div class="movie-box">
+                  <a href="movie.htm">
+                      <img src="media/d12.jpg">
+                  </a>
+              </div>
+              <div class="movie-box">
+                <a href="movie.htm">
+                    <img src="media/d13.jpg">
+                </a>
+            </div>
+              <div class="movie-box">
+                  <a href="movie.htm">
+                      <img src="media/d14.jpg">
+                  </a>
+              </div>
+              <div class="movie-box">
+                  <a href="movie.htm">
+                      <img src="media/d15.jpg">
+                  </a>
+              </div>
+              <div class="movie-box">
+                  <a href="movie.htm">
+                      <img src="media/d16.jpg">
+                  </a>
+              </div>
+        
+    </div>
+  </section>
+    <h1><a href="moviepage.html" style="color: rgb(129, 9, 9);">Back</a></h1>
+  
+  <div>
+    <fieldset>
+      <legend style="color: rgb(129, 9, 9);">Rate Us:</legend>
+      <p style="color: rgb(129, 9, 9);">Rate the quality of our service here</p>
+  
+      <form method="post" style="color: rgb(129, 9, 9);">
+        <input type="radio" name="rate" value="0%">0%
+        <br>
+        <input type="radio" name="rate" value="25%">25%
+        <br>
+        <input type="radio" name="rate" value="50%">50%
+        <br>
+        <input type="radio" name="rate" value="75%">75%
+        <br>
+        <input type="radio" name="rate" value="100%" checked>100%
+        <br>
+        <input type="submit" value="Submit">
+      </form>
+    </fieldset>
+  </div>
+  <script>
+    function searching() {
+        var styles;
+        styles = document.getElementById("ser")
+        styles.classList.add("searchstyle")
+    }
+    function searching2() {
+        var styles;
+        styles = document.getElementById("ser");
+        styles.classList.remove("searchstyle");
+    }
+</script>
+</div>
+</body>
+</html>

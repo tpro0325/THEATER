@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> THEATER| Sign up </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="signUp-container"> 
+    <div class="SignUp-box">
+       <div class="signUp-header">
+        <h1>Sign up to <span class="theater-text">THEATER</span></h1>
+       </div>
+      <form>
+        <div class="sgn-box">
+            <label for="name">Name</label>
+            <input type="text" class="signUp-field" placeholder="Name" id="name" required/>
+            <label for="email">Email</label>
+            <input type="email" class="signUp-field" placeholder="E-mail" id="email" required/>
+            <label for="password">Password</label>
+            <input type="password" class="signUp-field" placeholder="Password" id="password" required/>
+           
+        </div>
+        <div class="sub-inp">
+            <button class="sub-btn" type="button" onclick="saveUserData()">
+                Sign up
+            </button>
+            <div class="sign-up-link">
+                <p>Already have an account? <a href="index.html">Login</a></p>
+            </div>
+        </div>
+      </form> 
+    </div>
+  </div> 
+  <script>
+    function saveUserData() {
+        //input
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var password = document.getElementById('password').value;
+
+        if (email === '' || password === '') {
+           alert('Please fill the form to sign up!');
+           return;
+        }
+
+        if (!isValid(email)) {
+            alert('Invalid email.Please enter a valid email address.');
+            return;
+        }
+
+        if (password.length != 6) {
+            alert('Password must be 6 characters');
+            return;
+        }
+
+        // struct
+        var userData = {
+            name: name,
+            email: email,
+            password: password,
+        };
+
+        var formDataJSON = JSON.stringify(userData);
+        // Save to local storage
+        localStorage.setItem('userData', formDataJSON);
+
+        //cookie 
+        document.cookie = "name=" + encodeURIComponent(name) + ";";
+        document.cookie = "email=" + encodeURIComponent(email) + ";";
+        document.cookie = "password=" + encodeURIComponent(password) + ";";
+
+        // Redirect to login page
+        window.location.href = "index.html";
+    }
+
+    function isValid(email) {
+        var emailx = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailx.test(email);
+    }
+</script>
+</body>
+</html>

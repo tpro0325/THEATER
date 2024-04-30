@@ -1,0 +1,108 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fall Guy</title>
+    <link rel="stylesheet" href="details.css">
+</head>
+<body>
+    <header>
+    <!-- بدايه الهيدر -->
+    <div class="head">
+
+        <!-- اللوغو -->
+        <div class="logo">
+            THEATER
+        </div>
+        <!-- نهايه اللوغو -->
+
+        <!-- اللينكات -->
+        <ul class="headlink">
+         <li class="headlinks0"> <a href="homepage.html" class="headlinks">HOME</a> </li> 
+          <li class="headlinks0"> <a href="tvpage.html"class="headlinks">TV SERIES</a> </li> 
+           <li class="headlinks0"> <a href="moviepage.html" class="headlinks">MOVIES</a></li> 
+        </ul>
+        <!-- نهايه اللينكات -->
+
+        <!-- البحث -->
+        <div class="searchbar">
+            <input type="text" id="ser" placeholder="What are you looking for?" class="search" onmouseenter="searching()" onmouseleave="searching2()"> 
+        </div>
+        <!-- نهايه البحث -->
+
+    </div>
+    </header>
+    <!-- نهايه الهيدر -->
+    <div class="container">
+     <div class="movie-box">
+      <div class="vid-box">  
+        <video controls>
+            <source src="media/The Fall Guy _ Official Trailer 2.mp4" type="video/mp4">
+          </video>
+       </div>   
+          <table>
+            <tr>
+                <td colspan="2">
+                    <p class="formatted-p"><span class="about">About:</span> Fresh off an almost career-ending accident, stuntman Colt Seavers has to track down a missing movie star, solve a conspiracy and try to win back the love of his life while still doing his day job.</p>
+                </td>
+            </tr>
+            <tr>
+                <td><h3>Director:</h3></td>
+                <td><a href="https://www.imdb.com/name/nm0500610/">David Leitch</a></td>
+            </tr>
+            <tr>
+                <td><h3>Writer:</h3></td>
+                <td><a href="">Drew Pearce & Glen A. Larson</a></td>
+            </tr>
+            <tr>
+                <td><h3>Main Leads:</h3></td>
+                <td>Ryan Gosling, Emily Blunt, Aaron Taylor-Johnson</td>
+            </tr>
+        </table>
+        
+     </div>
+     <div class="also">
+        <h2>more like this:</h2>
+       <div class="first-row">
+        <div class="xoxo1"><a href="openpage.html">
+            <img src="media/red.jpg"></a>
+        </div>
+        <div class="xoxo2"><a href="movie.html">
+            <img src="media/the true man show.jpeg"></a>
+        </div>
+        <div class="xoxo3"><a href="movie.html">
+            <img src="media/ghostbusters.jpg"></a>
+        </div>
+       </div>
+        <div class="second-row">
+            <div class="xoxo1"><a href="movie.html">
+                <img src="media/madame web.jpeg"></a>
+            </div>
+            <div class="xoxo2"><a href="openpage.html">
+                <img src="media/free guy1.webp"></a>
+            </div>
+            <div class="xoxo3"><a href="openpage.html">
+                <img src="media/DUNE.jpg"></a>
+            </div>
+        </div>
+     </div>
+    </div>
+
+
+<script>
+    function searching() {
+        var styles = document.getElementById("ser");
+        styles.classList.add("searchstyle");
+    }
+
+    function searching2() {
+        var styles = document.getElementById("ser");
+        styles.classList.remove("searchstyle");
+    }
+ /*   const video = document.querySelector('video');
+    video.width = 640; 
+    video.height = 360;*/ 
+</script>
+</body>
+</html>

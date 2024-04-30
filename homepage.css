@@ -1,0 +1,327 @@
+body{
+    background-color:black;
+}
+
+.head{
+    height: 10%;
+    width: 100%;
+    background-color:rgb(187, 11, 11);
+    display: flex;
+    position: sticky;
+    top: 0px;
+    box-shadow: 0px 0px 10px #bd2424;
+
+}
+.logo{ 
+    font-weight: 700;
+    width: 15%;
+    user-select: none;
+    font-family: cursive;
+    font-size: 2em;
+    margin-left: 7px;
+    margin-right: 7px;
+    color:black
+   
+
+}
+.headlink{
+    width: 50%;
+    height: 100%;
+    text-decoration: none;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.headlinks{
+  
+    text-align: center;
+    text-decoration: none;
+    color:whitesmoke;
+    font-size: large;
+    margin-top: 14px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-family:sans-serif;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.headlinks0:hover{
+    text-decoration: none;
+    transform: scale(1.1);
+    transition: .8s;
+}
+.headlinks:hover{
+    color:black;
+}
+.headlinks0{
+    list-style: none;
+}
+.searchbar{
+    padding-right:50px ;
+    height: 100%;
+    width: 45%;
+}
+.search{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 75%;
+    width: 100%;
+    outline: none;
+
+}
+.searchstyle{
+    box-shadow: 0px 0px 15px #bd2424;
+    outline: 5px;
+    outline-color: #bd2424;
+  
+}
+
+.main{
+    width: 100%;
+    height: 350%;
+    margin-top: 2%;
+    box-shadow: 0px 0px 10px #bd2424;
+    border-radius: 10px;
+}
+label{
+    color:whitesmoke;
+    margin: 10px;
+    font-size: x-large;
+    font-family: sans-serif;
+}
+.firstrow{
+    width: 98%;
+    margin-left: 1%;
+    margin-bottom: 3%;
+    margin-top: 1%;
+    height: 15%;
+    border-radius: 15px;
+    display: flex;
+}
+.all{
+    width: 98%;
+    margin-left: 1%;
+    height: 60%;
+    margin-top: 1%;
+    border-radius: 15px;
+}
+.allfirstrow{
+    width: 100%;
+    height: 50%;
+    border-radius: 15px 15px 0px 0px;
+    display: flex;
+
+}
+.allsecendrow{
+    width: 100%;
+    height: 25%;
+    background-color: black;
+    display: flex;
+
+
+}
+.allthirdrow{
+    width: 100%;
+    height: 25%;
+    border-radius: 0px 0px 15px 15px ;
+    display: flex;
+
+}
+
+.firstrow1{
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    height: 100%;
+    width: 22%;
+    border-radius: 15px ;
+    transition: 0.7s;
+}
+.firstrow1:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px rgb(205, 205, 205);
+}
+.imgstyle{
+    width: 99%;
+    height: 99%;
+    margin-left: .5%;
+    margin-top: .5%;
+    border-radius: 15px;
+
+}
+
+.allfirstrow1{
+    height: 100%;
+    width: 40%;
+    transition: 0.7s;
+    border-radius: 15px 0px 0px 0px;
+}
+.allfirstrow1:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px rgb(205, 205, 205);
+}
+.allfirstrow2{
+    height: 100%;
+    width: 60%;
+}
+.allfirstrow21{
+    height: 50%;
+    width: 100%;
+    display: flex;
+}
+.allfirstrow22{
+    height: 50%;
+    width: 100%;
+    display: flex;
+}
+.allfirstrow211{
+    height: 100%;
+    width: 33.33%;
+ transition: 0.7s;
+}
+.allfirstrow211:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px rgb(205, 205, 205);
+}
+.allfirstrow212{
+    height: 100%;
+    width: 33.33%;
+    transition: 0.7s;
+}
+.allfirstrow212:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px rgb(205, 205, 205);
+}
+.allfirstrow213{
+    height: 100%;
+    width: 33.34%;
+    transition: 0.7s;
+    border-radius: 0px 15px 0px 0px;
+}
+.allfirstrow213:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px rgb(205, 205, 205);
+}
+.allfirstrow221{
+    height: 100%;
+    width: 33.33%;
+    transition: 0.7s;
+}
+.allfirstrow221:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px rgb(205, 205, 205);
+}
+.allfirstrow222{
+    height: 100%;
+    width: 33.33%;
+    transition: 0.7s;
+
+}
+.allfirstrow222:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px rgb(205, 205, 205);
+}
+.allfirstrow223{
+    height: 100%;
+    width: 33.34%;
+    transition: 0.7s;
+}
+.allfirstrow223:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px rgb(205, 205, 205);
+}
+.allsecendrow1{
+    height: 100%;
+    width: 20%;
+    transition: 0.7s;
+
+}
+.allsecendrow1:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px rgb(205, 205, 205);
+}
+.allsecendrow2{
+    height: 100%;
+    width: 20%;
+    transition: 0.7s;
+}
+.allsecendrow2:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px rgb(205, 205, 205);
+}
+.allsecendrow3{
+    height: 100%;
+    width: 20%;
+    transition: 0.7s;
+}
+.allsecendrow3:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px rgb(205, 205, 205);
+}
+.allsecendrow4{
+    height: 100%;
+    width: 20%;
+    transition: 0.7s;
+}
+.allsecendrow4:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px rgb(205, 205, 205);
+}
+.allsecendrow5{
+    height: 100%;
+    width: 20%;
+    transition: 0.7s;
+}
+.allsecendrow5:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px rgb(205, 205, 205);
+}
+.allthirdrow1{
+    height: 100%;
+    width: 20%;
+    transition: 0.7s;
+    border-radius: 0px 0px 0px 15px;
+}
+.allthirdrow1:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px rgb(205, 205, 205);
+}
+.allthirdrow2{
+    height: 100%;
+    width: 20%;
+    transition: 0.7s;
+}
+.allthirdrow2:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px rgb(205, 205, 205);
+}
+.allthirdrow3{
+    height: 100%;
+    width: 20%;
+    transition: 0.7s;
+}
+.allthirdrow3:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px rgb(205, 205, 205);
+}
+.allthirdrow4{
+    height: 100%;
+    width: 20%;
+    transition: 0.7s;
+}
+.allthirdrow4:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px rgb(205, 205, 205);
+}
+.allthirdrow5{
+    height: 100%;
+    width: 20%;
+    transition: 0.7s;
+
+}
+.allthirdrow5:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px rgb(205, 205, 205);
+}
+
+

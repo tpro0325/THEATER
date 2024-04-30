@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="movie.css">
+<title>The Main Page</title>
+</head>
+
+<body style=" background-color: rgb(34, 33, 33);">
+    <header>
+        <!-- بدايه الهيدر -->
+        <div class="head">
+    
+            <!-- اللوغو -->
+            <div class="logo">
+                THEATER
+            </div>
+            <!-- نهايه اللوغو -->
+    
+            <!-- اللينكات -->
+            <ul class="headlink">
+             <li class="headlinks0"> <a href="homepage.html" class="headlinks">HOME</a> </li> 
+              <li class="headlinks0"> <a href="tvpage.html"class="headlinks">TV SERIES</a> </li> 
+               <li class="headlinks0"> <a href="moviepage.html" class="headlinks">MOVIES</a></li> 
+            </ul>
+            <!-- نهايه اللينكات -->
+            <div class="searchbar">
+            <input type="text" id="ser" placeholder="What are you looking for?" class="search" onmouseenter="searching()" onmouseleave="searching2()"> 
+        </div>
+        <!-- نهايه البحث -->
+
+    </div>
+    </header>
+<div class="main">
+        <div class="container">
+            <nav>
+              <a  class="momo" href="#"><b>TV SERIES</b> </a>
+              <ul>
+               <li><a  href="drama 1.html" target="_blank"><b>DRAMA</b></a></li>
+               <li><a href="action 1.html" target="_blank"><b>ACTION</b></a></li>
+               <li><a href="comedy 1.html" target="_blank"><b>COMEDY</b></a></li>
+               <li><a href="bb.html" target="_blank"><b>ROMANCE</b></a></li>
+               <li><a href="page.html" target="_blank"><b>HORROR</b></a></li>
+              </ul>
+         </nav>
+       <div class="content">
+           <div class="text"> 
+               <h1><br> <br> <br> <br><b>''WELCOME TO<span style="color: red;">'THEATER'</span>  SERIES''<br> <br> </b>
+                  </h1>
+               
+               <p><b><span class="heart">&#x2764;</span>It is time to watch your favorite series on our website</b></p>
+               </div>
+               <div CLASS ="image">
+                 <img src="Trending GIF netflix animation tv gif movie movies film television loop tv show cinema chill channel lounge remote channel surfing boxset.gif" width="500" height="370">
+               </div>
+           </div>
+       </div>  
+       <script>
+        function scrollToBottom() {
+            window.scrollTo(0, document.body.scrollHeight);
+        }
+        window.onload = scrollToBottom;
+    </script>
+    
+<script>
+    function searching() {
+        var styles;
+        styles = document.getElementById("ser")
+        styles.classList.add("searchstyle")
+    }
+    function searching2() {
+        var styles;
+        styles = document.getElementById("ser");
+        styles.classList.remove("searchstyle");
+    }
+</script>
+</div>
+</body>
+
+</html>
